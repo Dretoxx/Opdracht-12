@@ -1,0 +1,52 @@
+html body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: orange;
+    height:100%;
+    width:90%;
+    padding:0 auto;
+    margin:0 auto;
+}
+
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    background-color: darkblue;
+    color:white;
+    padding:10px 10px 10px 0;
+    margin:10px;
+    list-style-type: none;
+}
+li a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.5em;
+    border:solid 1px white;
+    padding:10px;
+        
+}
+li a:hover{
+    background-color:lightblue;
+}    
+li a[href*="index"]:hover{
+    color:lightblue;
+    font-weight: bold;
+    
+}
+
+li a[href*="page2"]:active{
+    color:red;
+    font-style: italic;
+    padding:10px;
+}
+li a[href*="page3"]:visited{
+    color:yellow;
+}
+li form input:focus{
+    color:green;
+    font-size:20px;
+    border:solid 5px aquamarine;
+}
+li a.currentpage{
+    background-color:grey;
+}
